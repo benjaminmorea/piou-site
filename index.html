@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Piou — Politique de confidentialité</title>
+<title>Piou : politique de confidentialité</title>
 <style>
   body { margin:0; background:#FDF7EF; color:#2E2B26;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
@@ -21,18 +21,32 @@
 <body>
 <main>
   <div class="bird">🐤</div>
-  <h1>Politique de confidentialité — Piou</h1>
-  <p class="updated">Dernière mise à jour : juillet 2026</p>
+  <h1>Politique de confidentialité de Piou</h1>
+  <p class="updated">Dernière mise à jour : août 2026</p>
 
   <p class="card">Piou ne crée aucun compte, ne te piste pas, et ne collecte
-  aucune donnée personnelle sur des serveurs.</p>
+  aucune donnée personnelle sur nos serveurs.</p>
 
   <h2>Données que tu saisis</h2>
   <p>Ton profil (objectifs, type de logement, fenêtres et leur orientation, ta
-  ville) et les relevés de température que tu saisis sont <strong>stockés
-  uniquement sur ton appareil</strong>. Ils ne sont ni transmis, ni vendus, ni
-  partagés. Ils peuvent être inclus dans une sauvegarde de ton téléphone
-  (iCloud / Google) si tu l'actives.</p>
+  ville) et les relevés de température que tu saisis sont <strong>stockés sur ton
+  appareil</strong>. Ils ne sont ni vendus, ni transmis à qui que ce soit, à deux
+  exceptions près que tu déclenches toi-même et qui sont décrites ci-dessous : la
+  synchronisation iCloud et le partage d'un logement. Ils peuvent aussi être
+  inclus dans une sauvegarde de ton téléphone (iCloud / Google) si tu
+  l'actives.</p>
+
+  <h2>iCloud et logement partagé</h2>
+  <p>Tes logements et tes relevés sont copiés dans <strong>ton propre espace
+  iCloud privé</strong>, pour que tu les retrouves si tu changes de téléphone.
+  Cet espace appartient à ton compte Apple : ni nous, ni personne d'autre n'y a
+  accès.</p>
+  <p>Si tu <strong>partages un logement</strong> avec quelqu'un, ce logement et
+  ses relevés deviennent visibles par cette personne, et par elle seule. C'est le
+  but, et rien d'autre ne voyage : tes autres logements restent invisibles. Tu
+  vois à tout moment qui a rejoint, tu peux retirer quelqu'un sans couper le
+  partage pour les autres, et le code d'invitation expire au bout de dix
+  minutes.</p>
 
   <h2>Localisation</h2>
   <p>Piou n'utilise <strong>pas</strong> le GPS pour te localiser. Ta ville est
@@ -41,12 +55,57 @@
   sur iOS, cela requiert l'autorisation de localisation, mais <strong>ta
   position n'est jamais lue, stockée ni transmise</strong>.</p>
 
+  <h2>Capteur connecté (Apple HomeKit)</h2>
+  <p>Si tu possèdes un capteur de température compatible HomeKit et que tu
+  choisis de le lier, Piou lit la température de ce capteur pour t'éviter de la
+  saisir à la main. Cette température est traitée <strong>exactement comme un
+  relevé saisi</strong>. Piou n'accède qu'à la température ; il ne lit ni ne
+  pilote tes autres accessoires HomeKit. Tu peux délier le capteur à tout moment
+  dans les réglages.</p>
+
+  <h2>Appareil photo (lecture du QR d'invitation)</h2>
+  <p>L'appareil photo ne sert <strong>qu'à une chose</strong> : lire le QR qui
+  contient le code à six caractères d'un logement partagé, pour t'éviter de le
+  recopier. L'image reste dans l'écran de visée, elle n'est <strong>jamais
+  enregistrée, ni analysée pour autre chose, ni transmise</strong>. Piou ne
+  demande cette autorisation qu'au moment où tu touches « Scanner le QR », et le
+  clavier reste toujours disponible si tu préfères refuser.</p>
+
+  <h2>Partage communautaire (anonyme, activé par défaut, désactivable)</h2>
+  <p>Piou partage le <strong>profil thermique</strong> de ton logement (7
+  paramètres physiques anonymes : inertie, isolation, exposition au soleil…) pour
+  aider les autres utilisateurs : plus il y a de contributeurs, plus les
+  estimations sont précises pour tout le monde, dès le premier jour. Ce partage
+  est <strong>activé par défaut</strong> parce qu'il est <strong>totalement
+  anonyme</strong>, mais tu peux le <strong>désactiver à tout moment dans les
+  réglages</strong>.</p>
+  <p>Ce partage <strong>n'inclut aucune donnée personnelle</strong> : ni ta
+  ville, ni ta position, ni tes relevés de température, ni aucun identifiant
+  permettant de te reconnaître. Ce sont uniquement des constantes physiques du
+  bâtiment (comment il réagit à la météo), indépendantes de qui tu es et d'où tu
+  habites. Ces paramètres transitent par <strong>Apple CloudKit</strong> (base
+  publique) et servent seulement à améliorer les estimations des logements
+  similaires.</p>
+
   <h2>Météo</h2>
-  <p>Les prévisions météo, la qualité de l'air et les pollens proviennent de
-  <a href="https://open-meteo.com">Open-Meteo.com</a>. Les coordonnées de la
-  ville que tu choisis sont envoyées à Open-Meteo pour obtenir la météo
-  correspondante. Voir la
-  <a href="https://open-meteo.com/en/terms">politique d'Open-Meteo</a>.</p>
+  <p>Sur iPhone, les prévisions proviennent d'<strong>Apple WeatherKit</strong>.
+  Les coordonnées de la ville que tu choisis sont transmises à Apple pour obtenir
+  la météo correspondante. Voir la
+  <a href="https://www.apple.com/legal/privacy/data/fr/weather/">politique
+  d'Apple</a>.</p>
+  <p>Sur les autres plateformes, la météo vient d'<a
+  href="https://open-meteo.com">Open-Meteo.com</a>, selon le même principe. Voir
+  la <a href="https://open-meteo.com/en/terms">politique d'Open-Meteo</a>.</p>
+  <p>Les niveaux de pollen sont calculés <strong>sur ton appareil</strong>, à
+  partir de la saison et de ta région. Aucune requête supplémentaire, aucune
+  donnée envoyée.</p>
+
+  <h2>Achat intégré</h2>
+  <p>Piou Premium s'achète une fois, sans abonnement. La transaction est traitée
+  <strong>de bout en bout par l'App Store</strong> : Piou ne voit ni ton moyen de
+  paiement, ni ton nom, ni ton adresse, ni ton identifiant Apple. L'application
+  se contente de demander au système si l'achat est acquis, et la réponse ne
+  quitte pas ton appareil.</p>
 
   <h2>Widget</h2>
   <p>Le widget d'écran d'accueil lit les mêmes données locales, partagées
