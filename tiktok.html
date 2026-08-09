@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Piou : retour d'autorisation TikTok</title>
+<meta name="robots" content="noindex">
+<style>
+  body { margin:0; background:#FDF7EF; color:#2E2B26;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.6; }
+  main { max-width:640px; margin:0 auto; padding:40px 24px 64px; }
+  h1 { font-size:1.5rem; margin-bottom:.2em; }
+  .card { background:#fff; border-radius:20px; padding:18px 20px;
+    box-shadow:0 6px 24px rgba(154,123,63,.12); }
+  code { display:block; word-break:break-all; font-size:1rem;
+    background:#F1E4CD; border-radius:12px; padding:14px; margin:12px 0; }
+  button { background:linear-gradient(90deg,#F1CC6B,#E3A85A); border:0;
+    border-radius:999px; padding:12px 26px; font-size:1rem; font-weight:800;
+    color:#2E2B26; cursor:pointer; }
+  .muted { color:#8a8378; font-size:.9rem; }
+  .bird { font-size:2.2rem; }
+</style>
+</head>
+<body>
+<main>
+  <div class="bird">🐤</div>
+  <h1>Retour d'autorisation TikTok</h1>
+  <p class="muted">Cette page ne sert qu'à récupérer le code d'autorisation.
+  Elle ne stocke rien et n'envoie rien nulle part.</p>
+  <div class="card" id="out">Lecture du code...</div>
+</main>
+<script>
+  // Le code arrive dans « ?code=... ». On l'affiche pour pouvoir le recopier
+  // dans le terminal. Rien n'est transmis : tout se passe dans le navigateur.
+  var params = new URLSearchParams(location.search);
+  var code = params.get('code');
+  var error = params.get('error');
+  var out = document.getElementById('out');
+
+  if (code) {
+    out.innerHTML = '<strong>Voici ton code :</strong><code id="c"></code>'
+      + '<button id="copy">Copier</button>'
+      + '<p class="muted">Il ne vaut que quelques minutes. Colle-le dans :<br>'
+      + '<code>dart run bin/tiktok_auth.dart --code LE_CODE</code></p>';
+    document.getElementById('c').textContent = code;
+    document.getElementById('copy').onclick = function () {
+      navigator.clipboard.writeText(code);
+      this.textContent = 'Copié';
+    };
+  } else if (error) {
+    out.innerHTML = '<strong>TikTok a refusé l\'autorisation.</strong>';
+    var p = document.createElement('p');
+    p.className = 'muted';
+    p.textContent = error + ' ' + (params.get('error_description') || '');
+    out.appendChild(p);
+  } else {
+    out.innerHTML = '<strong>Aucun code dans l\'adresse.</strong>'
+      + '<p class="muted">Cette page s\'ouvre normalement toute seule, à la fin '
+      + 'du parcours d\'autorisation TikTok.</p>';
+  }
+</script>
+</body>
+</html>
