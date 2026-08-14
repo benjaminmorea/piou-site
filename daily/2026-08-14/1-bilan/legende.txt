@@ -1,8 +1,8 @@
-Les étés de 1975-1984 étaient plus frais de 2,2° que ceux d'aujourd'hui.
+L'été 2026 est plus chaud de 5,7° que les étés de 1975-1984.
 
 Arrêté au 14 août, comme toutes les années comparées.
 
-5 décennies, les mêmes villes, les mêmes jours de l'année. Entre 1975-1984 et 2015-2024, la température moyenne de l'été a pris 2,2°, et le nombre de nuits au-dessus de 20 degrés est passé de 4 à 10 par été. Seule l'époque change.
+5 décennies, les mêmes villes, les mêmes jours de l'année. D'une décennie à l'autre, la température moyenne de l'été a pris 2,2° entre 1975-1984 et 2015-2024 — c'est la tendance de fond, celle qui ne dépend d'aucune année extrême. L'été 2026, lui, en est à 24,5° et 33 nuits au-dessus de 20 degrés, contre 4 par été entre 1975 et 1984.
 
 Moyenne de Marseille, Lyon, Paris, Toulouse, Bordeaux, Nantes, Lille et Strasbourg — pas un indicateur national. Données : réanalyse ERA5 (Copernicus) via Open-Meteo. Même fenêtre, du 1er juin au 14 août, pour chaque année.
 
