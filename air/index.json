@@ -1,0 +1,97 @@
+{
+  "date": "2026-08-25",
+  "source": "Source : Atmo France / AASQA",
+  "regions": [
+    {
+      "code": "11",
+      "nom": "Île-de-France",
+      "zones": 1288,
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
+    {
+      "code": "24",
+      "nom": "Centre-Val de Loire",
+      "zones": 1756,
+      "lat": 47.9029,
+      "lon": 1.9093
+    },
+    {
+      "code": "27",
+      "nom": "Bourgogne-Franche-Comté",
+      "zones": 3699,
+      "lat": 47.322,
+      "lon": 5.0415
+    },
+    {
+      "code": "28",
+      "nom": "Normandie",
+      "zones": 2653,
+      "lat": 49.4432,
+      "lon": 1.0999
+    },
+    {
+      "code": "32",
+      "nom": "Hauts-de-France",
+      "zones": 3790,
+      "lat": 50.6292,
+      "lon": 3.0573
+    },
+    {
+      "code": "44",
+      "nom": "Grand Est",
+      "zones": 5115,
+      "lat": 48.5734,
+      "lon": 7.7521
+    },
+    {
+      "code": "52",
+      "nom": "Pays de la Loire",
+      "zones": 1300,
+      "lat": 47.2184,
+      "lon": -1.5536
+    },
+    {
+      "code": "53",
+      "nom": "Bretagne",
+      "zones": 1263,
+      "lat": 48.1173,
+      "lon": -1.6778
+    },
+    {
+      "code": "75",
+      "nom": "Nouvelle-Aquitaine",
+      "zones": 4317,
+      "lat": 44.8378,
+      "lon": -0.5792
+    },
+    {
+      "code": "76",
+      "nom": "Occitanie",
+      "zones": 4609,
+      "lat": 43.6047,
+      "lon": 1.4442
+    },
+    {
+      "code": "84",
+      "nom": "Auvergne-Rhône-Alpes",
+      "zones": 4020,
+      "lat": 45.764,
+      "lon": 4.8357
+    },
+    {
+      "code": "93",
+      "nom": "Provence-Alpes-Côte d'Azur",
+      "zones": 962,
+      "lat": 43.2965,
+      "lon": 5.3698
+    },
+    {
+      "code": "94",
+      "nom": "Corse",
+      "zones": 360,
+      "lat": 41.9192,
+      "lon": 8.7386
+    }
+  ]
+}
