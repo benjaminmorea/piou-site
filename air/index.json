@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-02",
+  "date": "2026-09-03",
   "source": "Source : Atmo France / AASQA",
   "regions": [
     {
@@ -26,14 +26,14 @@
     {
       "code": "28",
       "nom": "Normandie",
-      "zones": 2653,
+      "zones": 2652,
       "lat": 49.4432,
       "lon": 1.0999
     },
     {
       "code": "32",
       "nom": "Hauts-de-France",
-      "zones": 3790,
+      "zones": 3789,
       "lat": 50.6292,
       "lon": 3.0573
     },
@@ -47,14 +47,14 @@
     {
       "code": "52",
       "nom": "Pays de la Loire",
-      "zones": 1300,
+      "zones": 434,
       "lat": 47.2184,
       "lon": -1.5536
     },
     {
       "code": "53",
       "nom": "Bretagne",
-      "zones": 1263,
+      "zones": 61,
       "lat": 48.1173,
       "lon": -1.6778
     },
@@ -68,7 +68,7 @@
     {
       "code": "76",
       "nom": "Occitanie",
-      "zones": 4609,
+      "zones": 164,
       "lat": 43.6047,
       "lon": 1.4442
     },
