@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-05",
+  "date": "2026-09-06",
   "source": "Source : Atmo France / AASQA",
   "regions": [
     {
@@ -12,7 +12,7 @@
     {
       "code": "24",
       "nom": "Centre-Val de Loire",
-      "zones": 1756,
+      "zones": 1754,
       "lat": 47.9029,
       "lon": 1.9093
     },
